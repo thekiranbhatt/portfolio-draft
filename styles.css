@@ -29,3 +29,27 @@ body.dark .node text,body.dark .edge-label{stroke:var(--paper)}
 .companion-widget{left:-118px;animation-duration:62s}.companion-trigger{width:92px;height:92px}.companion-trigger:after{bottom:7px;left:14px;width:64px;height:10px}.companion-sprite{width:86px;height:86px}
 @keyframes companion-cross-page{from{transform:translateX(0)}to{transform:translateX(calc(100vw + 236px))}}
 @media(max-width:800px){.assay{grid-template-columns:minmax(0,1fr) 42px;padding-right:0}.assay-id,.assay-body,.assay-tail{grid-column:1}.assay-body{grid-template-columns:1fr 1fr}.assay-marker{grid-column:2;grid-row:1/4;padding-left:10px}.assay:after{grid-column:2;grid-row:3}.assay-tail{grid-column:1}.network-frame{grid-template-columns:1fr}.network-stage,.network-stage svg{min-height:0}.network-stage svg{height:auto;aspect-ratio:900/500}.network-stage .node text{font-size:24px;stroke-width:10px}.network-stage .edge-label{font-size:17px;stroke-width:14px}.network-stage .node circle{r:17px;stroke-width:4px}.companion-widget{left:-94px;animation-duration:48s}.companion-trigger{width:76px;height:76px}.companion-sprite{width:70px;height:70px}}
+
+/* Readable descriptive copy and a single project index per work item. */
+.portrait-ledger>div p,
+.portrait-notes p,
+.section-note,
+.assay-body p,
+.reagent-shelf article>p:last-child,
+.node-panel>p:not(.label),
+.node-panel li {
+  font-size:18px;
+  line-height:1.5;
+}
+.portrait-notes p{max-width:340px}
+.section-note{max-width:430px}
+.assay{grid-template-columns:140px minmax(0,1fr);padding:26px 43px 26px 0}
+.assay:after{position:absolute;right:3px;top:26px}
+.assay-body{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.assay-tail{grid-column:2}
+@media(max-width:800px){
+  .assay{grid-template-columns:minmax(0,1fr);padding-right:40px}
+  .assay-id,.assay-body,.assay-tail{grid-column:1}
+  .assay-body{grid-template-columns:1fr}
+  .assay:after{right:8px;top:26px}
+}
